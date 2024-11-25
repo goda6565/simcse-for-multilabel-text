@@ -7,7 +7,20 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.12"
+transformers = {extras = ["torch"], version = "4.40.2"}
+datasets = "^3.1.0"
+torch = {version = "2.5.1", source = "torch_cu121"}
+scikit-learn = "^1.5.2"
+wandb = "^0.18.7"
+xgboost = "^2.1.2"
+peft = "^0.13.2"
+llm2vec = "^0.2.2"
 
+
+[[tool.poetry.source]]
+name = "torch_cu121"
+url = "https://download.pytorch.org/whl/cu121"
+priority = "explicit"
 
 [build-system]
 requires = ["poetry-core"]

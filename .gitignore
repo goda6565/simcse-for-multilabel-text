@@ -2,3 +2,9 @@
 tests
 # .env
 .env
+# output dir
+outputs
+# pycache
+__pycache__
+# wandB
+wandb
